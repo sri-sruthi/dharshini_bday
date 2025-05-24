@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Memory Jars</h1>
+        <p class="subtitle">Open each jar to discover heartfelt messages</p>
+    </header>
+
+    <main>
+        <div class="jars-container" id="jarsContainer"></div>
+    </main>
+
+    <div class="modal" id="messageModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle">Friend's Message</h2>
+            <div class="modal-scroll">
+                <div class="message-section">
+                    <h3>✨ <span>Wish</span></h3>
+                    <p id="modalWish"></p>
+                </div>
+                <div class="message-section">
+                    <h3>🕰️ <span>Memory</span></h3>
+                    <p id="modalMemory"></p>
+                </div>
+                <div class="message-section">
+                    <h3>🌻 <span>Description</span></h3>
+                    <p id="modalDesc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

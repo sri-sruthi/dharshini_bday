@@ -1,0 +1,236 @@
+/* Modern Color Palette */
+:root {
+    --primary: #6a4c93;
+    --secondary: #f8bbd0;
+    --accent: #ffab91;
+    --text: #2d3436;
+    --light: #f5f5f5;
+    --jar-glass: rgba(214, 234, 248, 0.7);
+    --shadow: 0 5px 15px rgba(106, 76, 147, 0.2);
+  }
+  
+  /* Base Styles */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: var(--text);
+    min-height: 100vh;
+  }
+  
+  header {
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .subtitle {
+    color: var(--primary);
+    font-size: 1.1rem;
+    opacity: 0.8;
+  }
+  
+  /* Jar Container */
+  .jars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  /* Jar Styles */
+  .jar {
+    width: 120px;
+    height: 150px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(var(--shadow));
+  }
+  
+  .jar:hover {
+    transform: translateY(-5px);
+  }
+  
+  .jar-body {
+    width: 100%;
+    height: 120px;
+    background: var(--jar-glass);
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 40px 40px;
+    border: 2px solid rgba(255,255,255,0.4);
+    box-shadow: inset 0 0 15px rgba(255,255,255,0.6);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Unique Lid Colors */
+  .jar:nth-child(1) .jar-lid { background: linear-gradient(135deg, #6a4c93 0%, #8a5a44 100%); }
+  .jar:nth-child(2) .jar-lid { background: linear-gradient(135deg, #ff6b6b 0%, #ffa502 100%); }
+  .jar:nth-child(3) .jar-lid { background: linear-gradient(135deg, #1dd1a1 0%, #10ac84 100%); }
+  .jar:nth-child(4) .jar-lid { background: linear-gradient(135deg, #5f27cd 0%, #341f97 100%); }
+  .jar:nth-child(5) .jar-lid { background: linear-gradient(135deg, #ff9ff3 0%, #feca57 100%); }
+  .jar:nth-child(6) .jar-lid { background: linear-gradient(135deg, #48dbfb 0%, #0abde3 100%); }
+  .jar:nth-child(7) .jar-lid { background: linear-gradient(135deg, #f368e0 0%, #ff9ff3 100%); }
+  .jar:nth-child(8) .jar-lid { background: linear-gradient(135deg, #00d2d3 0%, #01a3a4 100%); }
+  
+  .jar-lid {
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    z-index: 2;
+    transition: transform 0.5s ease;
+  }
+  
+  .jar.open .jar-lid {
+    transform: translateY(-35px) rotate(15deg);
+  }
+  
+  .jar-label {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 1rem;
+  }
+  
+  /* Compact Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    backdrop-filter: blur(3px);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background: white;
+    margin: 10vh auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 500px;
+    max-height: 70vh;
+    box-shadow: var(--shadow);
+    animation: modalOpen 0.4s ease-out;
+  }
+  
+  .modal-scroll {
+    max-height: 60vh;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  @keyframes modalOpen {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary);
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .close:hover {
+    transform: rotate(90deg);
+    color: var(--accent);
+  }
+  
+  .message-section {
+    margin: 15px 0;
+    padding: 15px;
+    background: rgba(248, 187, 208, 0.1);
+    border-radius: 10px;
+    border-left: 3px solid var(--accent);
+  }
+  
+  .message-section h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .message-section h3 span {
+    font-weight: 600;
+  }
+  
+  .message-section p {
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  
+  /* Scrollbar Styling */
+  .modal-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .modal-scroll::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
+    border-radius: 3px;
+  }
+  
+  .modal-scroll::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 3px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal-content {
+      margin: 5vh auto;
+      max-height: 80vh;
+    }
+    .modal-scroll {
+      max-height: 70vh;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    .jar {
+      width: 100px;
+      height: 130px;
+    }
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+    .message-section {
+      padding: 12px;
+    }
+  }
