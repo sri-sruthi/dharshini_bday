@@ -17,7 +17,7 @@ const friends = [
         name: "Lakshmi",
         wish: "Happy birthday arai thunaivi♥️😘❣️",
         memory: "370♥️💅🏻",
-        description: Don🔥🔥🔥"
+        description: "Don🔥🔥🔥"
     },
     {
         name: "Sritha",
