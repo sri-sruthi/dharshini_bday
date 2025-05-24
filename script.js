@@ -41,7 +41,7 @@ const friends = [
         name: "Sri Sruthi",
         wish: "Happy, Happy birthday, Dharshini!!!🥰❤️",
         memory: "Haan...namma rendu perum serndhu 'kuch rang pyar ke aise bhi' or 'ini ellaam vasanthame' oda episodes mela obsess aitu theduradhuuu! 🤣🤣",
-        description: "You are sooo, sooo kind at heart and sooo generous at helping others woithout expecting anything in return... those are truly gem of qualitiesss! Be like this always!❤️"
+        description: "You are sooo, sooo kind at heart and sooo generous at helping others without expecting anything in return... those are truly gem of qualitiesss! Be like this always!❤️"
     }
 ];
 
