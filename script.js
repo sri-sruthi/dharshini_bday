@@ -1,50 +1,50 @@
 // Friend data with your collected content
 const friends = [
     {
-        name: "Alex",
-        wish: "May your birthday be as wonderful as you've made all our lives!",
-        memory: "Remember when we got lost in the city and found that amazing café?",
-        description: "The most spontaneous and joyful person I know."
+        name: "Madhura",
+        wish: "Unkooda kandippa oru csk match chepauk la pakkanum dharsh🥰",
+        memory: "Everyday sitting with you in class",
+        description: "Un superpower na boogambamey vandhalum your calm and composed nature. A very very Happy Birthday dharshuuu"
     },
     {
-        name: "Sam",
-        wish: "Wishing you a year filled with love and laughter!",
-        memory: "That night we stayed up until sunrise talking about dreams.",
-        description: "Your empathy inspires everyone."
+        name: "Lakshita",
+        wish: "Happy Birthday Dharsh💝",
+        memory: "You started as my first sem benchmate, happy to have a good friend like you don, my fav memory would be all the time we spent in your room gossiping and talking random things , hope our friendship last long 🫶.",
+        description: "Brave, caring,funny,genius, CSK fan of our group"
     },
     // Add 6 more friends...
     {
-        name: "Jordan",
-        wish: "Happy birthday to someone who brightens the world!",
-        memory: "Our road trip singing terribly to every song!",
-        description: "Your energy is contagious."
+        name: "Lakshmi",
+        wish: "Happy birthday arai thunaivi♥️😘❣️",
+        memory: "370♥️💅🏻",
+        description: Don🔥🔥🔥"
     },
     {
-        name: "Taylor",
-        wish: "May this year bring everything you hope for!",
-        memory: "When you helped me through that tough time.",
-        description: "A loyal friend who always shows up."
+        name: "Sritha",
+        wish: "Happy porandha naal madoom🫶🏻",
+        memory: "Memories...??? Haan... Andha bedsheet aa vechu reel eduthom ae.. Dance one.. Adhu😌😌🫶🏻🫶🏻",
+        description: "Hmm.. What else... Aah... College bag... Aahh...ne work pogum podhu I will get one for... Maaman irukkum podhu ne en ma enkitta kekkanum🫣😆maaman kitta kelu po"
     },
     {
-        name: "Casey",
-        wish: "Cheers to another year of your amazing presence!",
-        memory: "That ridiculous cooking attempt!",
-        description: "The funniest person with the biggest heart."
+        name: "Mayuri",
+        wish: "Happy birthday day Pangali(uk wht i m telling)♥️😉",
+        memory: "Memories.... Namba konja naalu rommates a irunthu nerya fun panomye and our IPL nights.. Waiting to create more😊",
+        description: "Ohh… Nee 21 aagittiyaa?! 😮😆 Ithu maariye epovum santhoshama iru d!!"
     },
     {
-        name: "Riley",
-        wish: "Sending you happiness tenfold!",
-        memory: "Our bookstore Saturdays losing track of time.",
-        description: "A curious soul finding wonder everywhere."
+        name: "Chinmayee",
+        wish: "happy birthday! u are old.",
+        memory: "adventures with ur laptop, from learning Django (painful) to ur ram malfunctioning so bad it couldn't read the OS (hilarious)",
+        description: "ur nonsense is very fun to be around. keep up the nonsense!❤️"
     },
     {
-        name: "Jamie",
-        wish: "Happy birthday adventure partner!",
-        memory: "Rainy day watching terrible movies.",
-        description: "Perfect balance of wild and comforting."
+        name: "Sri Sruthi",
+        wish: "Happy, Happy birthday, Dharshini!!!🥰❤️",
+        memory: "Haan...namma rendu perum serndhu 'kuch rang pyar ku aise bhi' or 'ini ellaam vasanthame' oda episodes mela obsess aitu theduradhuuu! 🤣🤣",
+        description: "You are sooo, sooo kind at heart and sooo generous at helping others woithout expecting anything in return... those are truly gem of qualitiesss! Be like this always!❤️"
     },
     {
-        name: "Morgan",
+        name: "Mirthiya",
         wish: "May your day be as special as you!",
         memory: "Surprise concert tickets - best night ever!",
         description: "Thoughtful in surprising, delightful ways."
